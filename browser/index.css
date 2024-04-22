@@ -1,0 +1,18 @@
+.client{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    cursor:none;
+
+    &::before{
+        content: attr(data-name);
+        position:absolute ;
+        top: 0;
+        left: 30px;
+     }
+}
+
+body{
+    cursor:none;
+}
